@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+		<title>High&Lowゲーム</title>
+	</head>
+	<body>
+	<div align="center">
+	<font size="8">High&Lowゲーム</font>
+	<hr>
+	<?php
+
+		$cards = array("Jk.png","01.png","02.png","03.png","04.png","05.png","06.png",
+						"07.png","08.png","09.png","10.png","11.png","12.png","13.png");
+		$leftCard = mt_rand(0,13);	//ランダムな整数値０～１３代入
+
+		echo '<img src ="../cards/',$cards[$leftCard],'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+		echo '<img src ="../cards/bg.png">';
+
+	?>
+	</div>
+	</body>
+</html>
